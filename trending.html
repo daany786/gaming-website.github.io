@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Webiste</title>
+    <link rel="stylesheet" href="trending.css">
+    <style>
+        /* Style for the slideshow container */
+        .slideshow-container {
+          max-width: 800px;
+          position: relative;
+          margin: auto;
+        }
+    
+        /* Style for the slides */
+        .mySlides {
+          display: none;
+        }
+    
+        /* Style for the navigation dots */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+    
+        /* Style for the active dot */
+        .active {
+          background-color: #717171;
+        }
+        .games{
+            margin-top: 60px;
+        }
+      </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <h1>DAMAT</h1>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="list-items"><a href="login2.html">Login</a></li>  
+          <li class="list-items"><a href="categories.html">Categories</a></li>
+          <li class="list-items"><a href="event.html">Our Event</a></li>
+          <li class="list-items"><a href="login.html">Sign Up</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+    <h1 style="text-align: center;">TRENDING GAMES  </h1>
+    <b><p style="text-align: center;">CLICK TO BUY NOW</p></b>
+
+    <div class="games">
+      <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="mySlides fade">
+         <a href="https://store.playstation.com/en-us/product/UP5082-CUSA14081_00-PTSBUN0000000000"><img src="./pubg.jpeg" style="width:100%"></a> 
+        </div>
+      
+        <div class="mySlides fade">
+          <a href="https://store.playstation.com/en-us/product/UP1004-CUSA03041_00-REDEMPTIONFULL02"><img src="./apps.21181.14244061853036130.7c2802a8-1b30-475c-bf05-1f4138de9fd0.jpeg" style="width:100%"></a> 
+        </div>
+      
+        <div class="mySlides fade">
+          <a href="https://store.playstation.com/en-us/product/UP1004-CUSA00419_00-GTAVDIGITALDOWNL"><img src="./capsule_616x353 (1).jpg" style="width:100%"></a> 
+        </div>
+        </div>
+      
+        <!-- Navigation dots -->
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      
+      <script>
+        // JavaScript for the automatic slideshow
+        var slideIndex = 0;
+        showSlides();
+      
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+      </script>
+      
+    
+    <footer>
+        <div class="header">
+          <div class="logo">
+            <h1>DAMAT</h1>
+          </div>
+          <nav class="nav">
+            <ul class="menu">
+              <li class="list-items"><a href="trending.html">Trending Games</a></li>
+            <li class="list-items"><a href="discover.html">Discover</a></li>
+            <li class="list-items"><a href="our journey.html">Our Journey</a></li>
+            <li class="list-items"><a href="T&C.html">Terms And Conditions</a></li>
+            <li class="list-items"><a href="blog.html">Blog</a></li>
+            <li class="list-items"><a href="https://www.github.com">Github</a></li>
+            <li class="list-items"><a href="https://www.twitter.com">twitter</a></li>
+            <li class="list-items"><a href="about us.html">About us</a></li>
+            <li class="list-items"><a href="contact us 2.html">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      </body>
+</html>

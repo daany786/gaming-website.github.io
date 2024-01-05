@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+ }
+ .header{
+    display: flex;
+ }
+ .card{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-left: 30%;
+    margin-top: 5%;
+
+ }
+
+ .card .circle{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+ }
+
+ .card .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+ }
+
+ .card:hover .circle::before{
+    background: #e9e8e8;
+    clip-path: circle(400px at center);
+
+ }
+
+ .card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+ }
+
+ .card:hover img{
+    left: 72%;
+    height: 290px;
+    width: 290px;
+
+ }
+
+ .card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+ }
+
+ .card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+
+ }
+
+ .card .content h2{
+    color: black;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+
+ }
+
+ .card .content p {
+    color: black;
+
+ }
+
+ .card.content a {
+    position: relative;
+    color: #fff;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    background: #fff;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+ }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <h1><a style="text-decoration: none; color: black;" href="index.html">DAMAT</a></h1>
+        </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="list-items"><a href="login2.html">Login</a></li>  
+            <li class="list-items"><a href="categories.html">Categories</a></li>
+            <li class="list-items"><a href="event.html">Our Event</a></li>
+            <li class="list-items"><a href="login.html">Sign Up</a></li>
+          </ul>
+        </nav>
+       
+      </header>
+      <h1 style="text-align: center;">About Us</h1>
+      <br>
+      <br>
+      <strong><p style="text-align: center;text-transform: uppercase;">Please Place The Cursor On The Black Circle Below</p></strong>
+
+    <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+            
+            <p>
+                
+                 Welcome to DAMAT: Your Gateway to a World of Play
+                 We're more than just a gaming website; we're a passionate community of players, creators, and dreamers who believe in the power of games to connect, inspire, and entertain. Whether you're a seasoned veteran or a wide-eyed newbie, we welcome you with open arms (and controllers!) to join us on this incredible journey.
+            </p>
+            
+        </div>
+        <img src="Pictures/WhatsApp Image 2023-12-23 at 2.52.07 AM.jpeg"  alt="">
+        
+    
+      </div>
+
+
+
+
+
+
+      <footer style="margin-top: 200px;">
+        </section>
+        <div class="header">
+          <div class="logo">
+            <h1>DAMAT</h1>
+          </div>
+          <nav class="nav">
+            <ul class="menu">
+               <li class="list-items"><a href="trending.html">Trending Games</a></li>
+               <li class="list-items"><a href="discover.html">Discover</a></li>
+               <li class="list-items"><a href="our journey.html">Our Journey</a></li>
+               <li class="list-items"><a href="T&C.html">Terms And Conditions</a></li>
+               <li class="list-items"><a href="blog.html">Blog</a></li>
+               <li class="list-items"><a href="https://www.github.com">Github</a></li>
+               <li class="list-items"><a href="https://www.twitter.com">twitter</a></li>
+               <li class="list-items"><a href="about us.html">About us</a></li>
+               <li class="list-items"><a href="contact us 2.html">Contact us</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </footer>
+</body>
+</html>

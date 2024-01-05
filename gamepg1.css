@@ -1,0 +1,14 @@
+#gamepg1radio{
+/* background-color: rgb(95, 95, 95); */
+border-color: antiquewhite;
+}
+
+a {
+    target-name: _blank;
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  a:visited {
+    color: inherit; 
+  }

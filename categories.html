@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+            background-color: #e9e8e8;
+        }
+         .bookcontainer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: black;
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 50px;
+        background-color:#e9e8e8;
+        gap: 20px;
+
+    }
+
+    h2{
+        text-align:  center;
+        padding:20px;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.25);
+        
+        z-index: -10;
+        
+    /*    flex-direction: column;*/
+    }
+
+
+    .bookcard{
+        padding: 30px;
+        margin-bottom: 100px;
+        box-sizing: border-box;
+        width:calc(33.33% - 20px);
+        height: 30vh;
+
+        border-radius: 5px;
+        border: solid #e9e8e8 2px;
+        font-size: 10p;
+        color: black;
+        background-color: azure;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bookcard:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+   
+
+
+
+    /*change the word after bookcard to a different one and then put that class in the desired div for background img. xy value controlled through % in backgrd-pos. cover ensures pic covers the whole container*/
+
+
+    .bookcard.card1{
+        background: url('./Pictures/actiongames.jpeg') center/cover;
+        color:white;
+        background-position: 20% 20%;
+    }
+
+    .bookcard.card1 a, .bookcard.card2 a, .bookcard.card3 a, .bookcard.card4 a, .bookcard.card5 a, .bookcard.card6 a, .bookcard.card7 a, .bookcard.card8 a, .bookcard.card9 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .bookcard.card1 a:hover {
+        color: #336699;
+    }
+
+
+
+    .bookcard.card2{
+        background: url('./Pictures/story\ mode\ games.jpeg') center/cover;
+        color:white;
+        background-position: 20% 20%;
+    }
+    .bookcard.card2 a:hover {
+        color: #336699;
+    }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1><a style="text-decoration: none; color: black;" href="index.html">DAMAT</a></h1>
+        </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="list-items"><a href="login2.html">Login</a></li>
+            <li class="list-items"><a href="categories.html">Categories</a></li>
+            <li class="list-items"><a href="event.html">Our Event</a></li>
+            <li class="list-items"><a href="login.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </header>    
+
+    <section>
+        <div class="bookcontainer">
+            
+            <div class="bookcard card1">
+     
+                <a href="GAMES SELECT 2.HTML">
+                     <h2 >Action Games</h2>
+                 </a>   
+             </div>
+            
+            <div class="bookcard card2">
+                <a href="games select.html"> 
+                     <h2>Story Mode</h2>
+                </a>
+            </div>
+            
+            
+            
+            
+         
+     
+         
+         
+         </div> 
+         
+         
+     </section>   
+     
+     <footer>
+        <div class="header">
+          <div class="logo">
+            <h1>DAMAT</h1>
+          </div>
+          <nav class="nav">
+            <ul class="menu">
+                <li class="list-items"><a href="trending.html">Trending Games</a></li>
+                <li class="list-items"><a href="discover.html">Discover</a></li>
+                <li class="list-items"><a href="our journey.html">Our Journey</a></li>
+                <li class="list-items"><a href="T&C.html">Terms And Conditions</a></li>
+                <li class="list-items"><a href="blog.html">Blog</a></li>
+                <li class="list-items"><a href="https://www.github.com">Github</a></li>
+                <li class="list-items"><a href="https://www.twitter.com">twitter</a></li>
+                <li class="list-items"><a href="about us.html">About us</a></li>
+                <li class="list-items"><a href="contact us 2.html">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+</body>
+</html>
